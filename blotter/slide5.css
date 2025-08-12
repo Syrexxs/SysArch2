@@ -5,12 +5,27 @@
   }
 
   header {
-    background: linear-gradient(#b465f5, #682686, #4d137c); /* deep purple */
+    background: linear-gradient(#15389d, #b01f9f); /* deep purple */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1rem;
   }
+
+  .botnav {
+    background: linear-gradient(#15389d, #b01f9f);
+    display: flex;
+    align-items: flex-end; /* aligns items to the bottom inside the nav */
+    justify-content: space-between;
+    padding: 1.30rem 1rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
 
   .title {
     color: white;
@@ -57,12 +72,12 @@
 
   form {
     background-color: #ffffff;
-    padding: 4rem 2rem;
-    border-radius: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
     box-shadow:
       0 4px 6px rgba(0,0,0,0.1),
       0 1px 3px rgba(0,0,0,0.06);
-    width: 100%;
+    width: 60%;
     max-width: 360px;
   }
 
