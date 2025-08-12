@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blotter System Login</title>
+  <link rel="stylesheet" href="slide5.css">
+</head>
+<body>
+  <header>
+    <!-- Burger Icon -->
+    <div class="title" aria-label="Logo Title">BLOTTER SYSTEM</div>
+    <div class="logo-container" aria-label="Barangay Logo">
+      <img src="malabono.png" alt="Round official circular logo with blue and orange themed design representing the City of Pasig seal" onerror="this.style.display='none'" />
+    </div>
+
+  </header>
+  <main>
+    <form id="login-form" aria-describedby="form-description" novalidate>
+      <h2 id="form-description">Please enter a passcode</h2>
+  <div class="password-container">
+
+    <!-- Visible -->
+    <input type="text" id="passcode-visible" name="passcode-visible" placeholder="Passcode" autocomplete="off" aria-required="true" aria-label="Visible passcode input" hidden />
+    
+    <!-- Hidden -->
+    <input type="password" id="passcode-hidden" name="passcode" placeholder="Passcode" autocomplete="off" aria-required="true" aria-label="Passcode input" />
+
+    <button type="button" class="toggle-visibility" aria-label="Toggle passcode visibility" title="Toggle passcode visibility" tabindex="-1">&#128065;</button>
+  </div>
+
+      <button type="submit" class="btn-submit">Enter</button>
+      <p role="alert" aria-live="assertive" class="error-message" id="error-msg" style="display:none"></p>
+    </form>
+  </main>
+  <script src="passcode.js"></script>
+</body>
+</html>
