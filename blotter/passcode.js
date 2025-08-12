@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const errorMsg = document.getElementById('error-msg');
   const correctPasscode = 'brgadminonly';
 
-  // Toggle visibility
+
   toggleBtn.addEventListener('click', () => {
     if (passVisible.hidden) {
-      // Show visible text, hide password dots
+
       passVisible.value = passHidden.value;
       passHidden.hidden = true;
       passVisible.hidden = false;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleBtn.title = 'Hide passcode';
       toggleBtn.setAttribute('aria-label', 'Hide passcode');
     } else {
-      // Show password dots, hide visible text
+
       passHidden.value = passVisible.value;
       passVisible.hidden = true;
       passHidden.hidden = false;
@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Form submit
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorMsg.style.display = 'none';
 
-    // Use whichever input is visible
+
     const enteredPass = passVisible.hidden ? passHidden.value.trim() : passVisible.value.trim();
 
     if (enteredPass === '') {

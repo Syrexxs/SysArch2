@@ -1,11 +1,11 @@
-/* General body styling */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(90deg, #bfc0ff 0%, #dfdeff 100%);
 }
 
-/* Header styling */
+
 header {
     background: linear-gradient(#15389d, #b01f9f);
     padding: 15px;
@@ -16,7 +16,20 @@ header {
     position: relative; 
 }
 
-/* Burger icon styling */
+.botnav {
+    background: linear-gradient(#15389d, #b01f9f);
+    display: flex;
+    align-items: flex-end; /* aligns items to the bottom inside the nav */
+    justify-content: space-between;
+    padding: 1.30rem 1rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
 .burger-icon {
     position: absolute;
     top: 40%;
@@ -33,7 +46,7 @@ header {
     border-radius: 2px;
 }
 
-/* Main container */
+
 .container {
     position: relative;
     width: 100%;
@@ -41,7 +54,7 @@ header {
     overflow: hidden;
 }
 
-/* Background video */
+
 .video-background {
     position: absolute;
     top: 0;
@@ -51,20 +64,20 @@ header {
     object-fit: cover;
 }
 
-/* Large text styling */
+
 .welcome-text {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 8vw; /* Using viewport width for responsiveness */
+    font-size: 8vw; 
     font-weight: bold;
     color: #e5008f;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Slightly adjusted shadow */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); 
     z-index: 10;
 }
 
-/* Play button styling */
+
 .play-button {
     position: absolute;
     top: 50%;
@@ -79,18 +92,17 @@ header {
     z-index: 20;
 }
 
-/* Responsive adjustments for smaller screens */
+
 @media (max-width: 768px) {
     .welcome-text {
-        font-size: 12vw; /* Adjust font size for smaller screens */
+        font-size: 12vw; 
     }
 
     .play-button {
-        padding: 15px; /* Slightly smaller button on smaller screens */
+        padding: 15px;
         font-size: 1.5em;
     }
 
-    /* Burger icon adjustment on smaller screens */
     .burger-icon {
         top: 50%;
         left: 10px;
